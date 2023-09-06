@@ -39,7 +39,7 @@
       const holes = document.querySelectorAll(".hole");
       const scoreBoard = document.querySelector(".score");
       const moles = document.querySelectorAll(".mole");
-      const timer = document.querySelector(".timer");
+
       let lastHole;
       let timeUp = false;
       let score = 0;
@@ -75,7 +75,6 @@
         score = 0;
         peep();
         setTimeout(() => {
-          timer.textContent = `time : ${leftTime}`;
           timeUp = true;
         }, 10000);
       }
